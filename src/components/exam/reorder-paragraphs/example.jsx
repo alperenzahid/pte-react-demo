@@ -1,6 +1,7 @@
-import React, { useState, useCallback,useEffect } from 'react'
+import React, {useState, useCallback, useEffect} from 'react'
 import Card from './Card'
 import update from 'immutability-helper'
+
 const style = {
     width: 800,
 };
@@ -8,17 +9,14 @@ const style = {
 let gcards = [];
 
 const Container = (props) => {
-    {
-
-
         const [cards, setCards] = useState([]);
 
         useEffect(() => {
             setCards((cards) => {
-                return props.options.map((option,index) => {
+                return props.options.map((option, index) => {
                     return {
-                        id : index + 1,
-                        text : option
+                        id: index + 1,
+                        text: option
                     }
                 })
             })
@@ -57,5 +55,5 @@ const Container = (props) => {
             </>
         )
     }
-};
-export {Container,gcards}
+;
+export {Container, gcards}
