@@ -6,8 +6,6 @@ import Login from "./components/Login";
 import Instructions from "./components/exam/Instructions";
 import Introduction from "./components/exam/Introduction";
 import Dashboard2 from "./components/dashZ/Dashboard";
-import Dashboard1 from "./components/dashA/Dashboard";
-import Results from "./components/dashA/Results";
 import NotFound from './components/notFound';
 
 
@@ -30,11 +28,9 @@ function App() {
             {/*Parametre gondermek istediginde asagidaki sekilde cagirabilirsin*/}
             {/*Asagida yazilan props history,location ve match in de gecmesi icin eklenir*/}
             <Route path='/dashboard' component={(props) => <Dashboard2 tabToActive="Tests" {...props} />} />
-            <Route path='/dashboard2' component={()=>wrapComponent(Dashboard1)} />
             <Route path='/instructions' component={()=>wrapComponent(Instructions)} />
             <Route path='/intro' component={()=>wrapComponent(Introduction)} />
             <Route path='/check' component={()=>wrapComponent(CheckAudio)} />
-            <Route path='/results' component={()=>wrapComponent(Results)} />
             <Route path='/q:id' component={()=>wrapComponent(Main)} /> {/*Bu yukarida olunca :id digerlerine ataniyor*/}  
             <Route path='/not-found' component={()=>wrapComponent(NotFound)} />
             <Redirect to="/not-found" />          
