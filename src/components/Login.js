@@ -7,6 +7,7 @@ function Login() {
     return (
             <div id="login" >
                 <div id="logo-area">
+                    {/* eslint-disable-next-line react/jsx-no-target-blank */}
                     <a href="https://www.ihu.edu.tr/" target="_blank">
                         <img src="logo.svg" alt="logo"/>
                         </a>

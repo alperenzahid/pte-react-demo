@@ -17,7 +17,7 @@ function Main() {
   let { id } = useParams();
   let start = parseInt(id) || -1;
   console.log("Start: ", start);
-  if (start == -1) {
+  if (start === -1) {
     return <NotFound />;
   }
 

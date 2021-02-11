@@ -19,6 +19,7 @@ const Footer = () => {
                 &copy;
                 <script>document.write(new Date().getFullYear())</script>, made
                 with <i className="material-icons">favorite</i> by
+                  {/* eslint-disable-next-line react/jsx-no-target-blank */}
                 <a href="https://linspark.com" target="_blank">
                   {" "}
                   Linspark Team

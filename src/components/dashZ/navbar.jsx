@@ -89,7 +89,7 @@ const NavBar = () => {
                 data-toggle="dropdown"
               >
                 <div className="logo-image">
-                  <img
+                  <img alt="logo"
                     src="assets/img/tim-logo.png"
                     className="img-fluid"
                   />

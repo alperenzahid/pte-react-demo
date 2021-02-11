@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
+import { Switch, Route, Redirect } from 'react-router-dom';
 import CheckAudio from './components/exam/CheckAudio';
 import Main from './components/Main';
 import Login from "./components/Login";

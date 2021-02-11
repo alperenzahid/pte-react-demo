@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-import {Route} from "react-router-dom";
+import React from "react";
 import SideBar from "./sidebar";
 import NavBar from "./navbar";
 import Footer from "./footer";
@@ -22,8 +21,8 @@ function Dashboard({ tabToActive, location }) {
   console.log(tabToActive);
 
   const selectTabAsActive = id => {
-    let filtered = tabs.filter(tab => tab.name == tabToActive)[0];
-    return filtered.id == id ? " active" : "";
+    let filtered = tabs.filter(tab => tab.name === tabToActive)[0];
+    return filtered.id === id ? " active" : "";
   };
 
   return (

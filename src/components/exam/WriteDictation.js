@@ -10,7 +10,7 @@ function WriteDictation({ data }) {
   let text = "";
 
   let history = useHistory();
-  let current = parseInt(localStorage.getItem("current"));
+  //let current = parseInt(localStorage.getItem("current"));
 
   return (
     <div>

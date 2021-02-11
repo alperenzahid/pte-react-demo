@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import ReactApexChart from "react-apexcharts";
-import {useLoop} from "react-countdown-circle-timer/src/hooks";
 
 export default class BarChart extends Component {
     seriesZ = [
@@ -21,7 +20,6 @@ export default class BarChart extends Component {
     categoriesZ = ['08/09/19', '08/15/19', '08/22/19', '09/15/19', '10/10/19', '10/15/19'].reverse();
 
     getCategories = () => {
-        let cats = [];
         for(let i=0; i<this.categoriesZ.length; i++){
             let total = 0;
             this.seriesZ.forEach(dat => total += dat.data[i]);
