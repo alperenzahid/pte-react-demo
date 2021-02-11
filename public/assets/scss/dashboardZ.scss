@@ -1,0 +1,129 @@
+$redSidebar: #a51e36;
+$whiteBtnBack: #FFF;
+$blueNavbar: #1c295c;
+$color1 : #ffb657;
+$color2 : #30bc9b;
+#dashboardZ{
+  font-size: 15px;
+  font-weight: 400;
+  min-height: 100vh;
+}
+
+.logo-image {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: -3px 4px;
+}
+
+span.navbar-text {
+  font-size: 1rem;
+  padding-top: 0;
+}
+
+#sidebarZ{
+  width: 320px;
+  background-color: #a51e36;
+  flex-direction: column;
+  justify-content: start;
+}
+#sideList{
+  width: 160px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+#brand{
+  padding-top: 0.2rem;
+}
+
+#umb{
+  min-height: 100vh;
+}
+
+#rightSide{
+  width: 100%;
+  max-width: 1453px;
+  display: flex;
+  flex-direction: column;
+}
+
+#navbarZ{
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.navbarText{
+  font-size:0.8rem;
+  padding: 0;
+  display: inline-block;
+  line-height: 1.5em;
+}
+
+.logoMT{
+  background-color: $redSidebar;
+  width: 275px;
+  height: 100%;
+  padding-top: 4rem;
+}
+.logoSmall{
+  //width: 75%;
+  background-color: $redSidebar;
+  height: 140px;
+  display: block;
+  margin-top: 15rem;
+}
+//--------- NAVBAR
+.navbarText{
+  color: $blueNavbar;
+}
+
+.navbar.navbar-transparent.navbar-expand-lg.d-flex.align-content-between {
+  margin-top: 1.3rem;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+//----------- TOP LINK
+.dropdown-menu.dropdown-with-icons>.dropdown-item{
+  :hover{
+    color: $whiteBtnBack !important;
+  }
+}
+
+.dropdown-toggle.nav-link.top-link{
+  color: $redSidebar !important;
+}
+
+//---------------------------------------------
+
+.footerDash{
+  margin-top: auto;
+  justify-content: space-around;
+}
+
+
+.pt013{
+  padding-top: 0.13em;
+}
+
+.card-pricing .icon {
+  padding: 2px 0 0px;
+}
+
+.card-pricing .card-title {
+  margin-top: 4px;
+}
+
+.side-link{
+  color: white!important;
+}
+
+#tab2{
+  margin-top: 2rem;
+}
+#tab3{
+  margin-top: 15rem;
+  margin-bottom: 3rem;
+}
