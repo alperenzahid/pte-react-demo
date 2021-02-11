@@ -10,19 +10,15 @@ function Dashboard({ tabToActive, location }) {
    const tabs = [
     { name: "Dashboard", icon: "dashboard", id: "1" },
     { name: "Tests", icon: "list", id: "2" },
-    { name: "Settings", icon: "toys", id: "3" }
+    { name: "Settings", icon: "settings", id: "3" }
   ];
 
   let result = location.search; // /dashboard?p=d gelirse Dashboard'i acsin.
   if (result != null && result.includes("p=d")) {
-    console.log("Islem Basarili");
     tabToActive = "Dashboard";
   }
-  console.log(tabToActive);
-
   const selectTabAsActive = id => {
-    let filtered = tabs.filter(tab => tab.name === tabToActive)[0];
-    return filtered.id === id ? " active" : "";
+    return tabs[id].name === tabToActive ? " active" : "";
   };
 
   return (
@@ -32,18 +28,14 @@ function Dashboard({ tabToActive, location }) {
         <div id="rightSide" className="p-0">
           <NavBar />
           <div className="container">
-            <div className="tab-content">              
-              {/* Nested Routing yapinca css vs cagirmada sorun olabiliyor.
-              <Route path="/dashboard/tests" component={Tests} />
-              <Route path="/dashboard/settings" component={Settings} />
-              <Route path="/dashboard/" component={Dash} /> */}
-              <div className={"tab-pane" + selectTabAsActive(1)} id="tab1">
+            <div className="tab-content">
+              <div className={"tab-pane" + selectTabAsActive(0)} id="tab1">
                 <Dash />
               </div>
-              <div className={"tab-pane" + selectTabAsActive(2)} id="tab2">
+              <div className={"tab-pane" + selectTabAsActive(1)} id="tab2">
                 <Tests />
               </div>
-              <div className={"tab-pane" + selectTabAsActive(3)} id="tab3">
+              <div className={"tab-pane" + selectTabAsActive(2)} id="tab3">
                 <Settings />
               </div>
             </div>
